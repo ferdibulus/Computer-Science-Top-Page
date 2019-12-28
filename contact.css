@@ -1,0 +1,27 @@
+ .img{
+  margin-top:30px;
+  border-style: double;
+  border-width:20px;
+  border-color:#00DD00; 
+  border-radius: 70px;
+  padding: 15px
+}
+
+.yazi{
+	color:white;
+	font-family: cursive;
+	font-size: 50px;
+	margin-left: 100px;
+}
+.yazi1{
+	color:white;
+	font-family: cursive;
+	font-size: 30px;
+	margin-left: 100px;
+}
+.map{
+	margin-left: 580px;
+	padding:10px 10px 10px 10px;
+
+
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+  <title>Error 6
+  </title>
+  <link  href="error.css" rel ="stylesheet" type="text/css">
+</head>
+<style>
+ .img{
+  margin-top:30px;
+  border-style: double;
+  border-width:20px;
+  border-color:#00DD00; 
+  border-radius: 70px;
+  padding: 15px
+}
+.yazi{
+	color:white;
+	font-family: cursive;
+	font-size: 50px;
+	margin-left: 100px;
+}
+.yazi1{
+	
+	color:white;
+	font-family: cursive;
+	font-size: 22px;
+	margin-left: 100px;
+}
+
+</style>
+<body background="7.jpg">
+
+  <div align="center">
+    <img src="1.png" width="300" height="140" class="img">
+  </div>
+  <div>
+    <span class="yazi">Error 6</span>
+    <hr>
+  </div>
+   <div  class="yazi1">
+   	 	<h1>Windows 10 Sınırlı Bağlantı Sorunu Çözümü</h1><br/>
+
+1. Başlat Menüsüne sağ tıklayıp menüden Komut İstemini (Yönetici) seçiyorsunuz.<br/>
+2. "reg delete HKCR\CLSID\{988248f3-a1ad-49bf-9170-676cbbc36ba3} /va /f" komutunu giriyorsunuz. (Fare sağ tıklayıp kopyalayıp yapıştırırsanız sorun yaşamazsınız.)<br/>
+3. Ardından "netcfg -v -u dni_dne" komutunu giriyorsunuz.<br/>
+4. Bilgisayarınızı yeniden başlattıktan sonra WiFi ayarlarınızı kontrol ettiğinizde sorunun giderilmiş olduğunu göreceksiniz. Çevrenizdeki tüm kablosuz ağlar görünür hale gelecek ve bağlanırken hiçbir sorun yaşamayacaksınız.<br/>
+<br/>
+<br/>
+<br/>
+
+
+1. Görev çubuğunda sağ altta bulunan bağlantı işaretine sağ tuş tıklayın. Ardından “Open Network and Sharing Centre” seçeneğine tıklayın.<br/>
+2. “Network and Sharing Centre” açtıktan sonra solda bulunan seçeneklerden “Change Adapter Setting”i seçin.<br/>
+3. Açılan pencerede eğer wi-fi ile bağlanıyorsanız  “Wi-fi” yazan işarete sağ tıklayın. Kullanmıyorsanız aynı işlemi diğerine yapın. Arkasından “properties(Özellikler)” e tıklayın.<br/>
+4. Açılan pencerede sağ üstte yer alan “Configure..(yapılandır)” butonuna tıklayın.<br/>
+5. Yeni gelen pencerede sağ üstte yer alan “Power Management(Güç Yönetimi)” bölümüne gelin.<br/>
+6. Gelen ekranda “Allow the computer to turn off this device to save power”(Güç tasarrufu için bilgisayarın bu aleti kapatmasına izin ver)‘de bulunan işareti kaldırın.<br/>
+7. Ok(tamam)‘a tıklayıp  çıkın. Sorunun çözülmüş olması muhtemelen.<br/>
+<br/>
+<br/>
+<br/>
+
+1. Aramaya “Edit Power Plan”(Güç planını düzenle) yazın.<br/>
+2. ”Edit power plan“a tıklayıp ardından “Change advanced power settings”(Gelişmiş güç ayarlarını değiştir) seçeneğine tıklayın.<br/>
+3. Açılan pencerede aşağı inerek “Wireless Adapter Settings”(kablosuz bağdaştırıcı ayarları) seçeneğini bulun ve tıklayarak genişletin.<br/>
+4. “On battery”(Şarjda) yazan kısmın karsısındaki seçeneği “Maximum Performance (Maximum perfonmans)“a ayarlayın ve kaydedip çıkın.<br/>
+<br/>
+<br/>
+<br/>
+
+Aşağıdaki komutları Komut istemcisinden yazarak deneyiniz.<br/>
+1. Başlat Menüsüne sağ tıklayıp menüden Komut İstemini (Yönetici) seçiyorsunuz. (Windows tuşu X )<br/> 
+2. netsh int ip reset resetlog.txt<br/>
+3. netsh winsock reset<br/>
+4. ipconfig /registerdns<br/>
+5. ipconfig /flushdns<br/>
+6. ipconfig /release<br/>
+7. Bilgisayarınızı yeniden başlattıktan sonra WiFi ayarlarınızı kontrol ettiğinizde sorunun giderilmiş olduğunu göreceksiniz.<br/>
+
+  </div>
+</body>
+</html>
